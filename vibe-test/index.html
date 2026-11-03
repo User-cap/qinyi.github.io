@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#11182b">
+<title>Vibe Coding · 发布测试</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Noto Sans SC",sans-serif;color:#eaf0ff;background:#0e1425}
+*{box-sizing:border-box}body{margin:0;min-height:100svh;display:grid;place-items:center;padding:24px;background:radial-gradient(circle at 15% 20%,#273c70 0,transparent 38%),radial-gradient(circle at 90% 80%,#34305c 0,transparent 36%),#0e1425}
+main{width:min(100%,490px);background:#ffffff0d;border:1px solid #ffffff20;border-radius:28px;padding:34px 28px;box-shadow:0 24px 80px #0005;backdrop-filter:blur(10px)}
+.chip{display:inline-flex;align-items:center;gap:9px;color:#a9caff;font-size:13px;letter-spacing:.06em}.dot{width:8px;height:8px;border-radius:50%;background:#7ad9ad;box-shadow:0 0 12px #7ad9ad}
+h1{font-size:clamp(30px,7vw,46px);line-height:1.2;margin:26px 0 16px}p{color:#b8c6dd;line-height:1.85;font-size:15px}
+button{border:0;color:#11182b;background:#c6e4ff;border-radius:14px;padding:13px 18px;font-size:15px;font-weight:700;cursor:pointer;margin-top:18px}
+#result{margin-top:20px;min-height:24px;color:#91e2bf;font-weight:600}
+small{color:#8394b1;display:block;margin-top:32px}
+</style>
+</head>
+<body>
+<main>
+<div class="chip"><span class="dot"></span>GITHUB PAGES · TEST SITE</div>
+<h1>想法，已经上线。✦</h1>
+<p>这是 AI 创建的独立静态测试页面，用来验证 GitHub 仓库与 GitHub Pages 的发布流程。它不会覆盖原有网站。</p>
+<button id="try">点击测试交互 →</button>
+<div id="result" aria-live="polite"></div>
+<small>Built with AI · No backend · Mobile first · v1.0</small>
+</main>
+<script>
+document.getElementById('try').addEventListener('click',()=>{
+document.getElementById('result').textContent='✓ JavaScript 运行成功！网站可以交互。';
+});
+</script>
+</body></html>
